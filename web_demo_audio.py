@@ -14,7 +14,7 @@ import os
 import re
 import secrets
 import tempfile
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 from transformers.generation import GenerationConfig
 from pydub import AudioSegment
 
