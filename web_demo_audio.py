@@ -54,7 +54,7 @@ def _load_model_tokenizer(args):
         device_map='auto'
     ).eval()
     model.generation_config = GenerationConfig.from_pretrained(
-        'args.checkpoint_path', trust_remote_code=True, resume_download=True,
+        args.checkpoint_path, trust_remote_code=True, resume_download=True,
     )
 
     return model, tokenizer
