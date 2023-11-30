@@ -19,7 +19,7 @@ from transformers.generation import GenerationConfig
 from pydub import AudioSegment
 import torch
 
-DEFAULT_CKPT_PATH = 'Qwen/Qwen-Audio-Chat'
+DEFAULT_CKPT_PATH = '4bit/Qwen-Audio-Chat'
 
 
 def _get_args():
@@ -54,7 +54,7 @@ def _load_model_tokenizer(args):
         device_map='auto'
     ).eval()
     model.generation_config = GenerationConfig.from_pretrained(
-        'qwen_audio_chat_config.json', trust_remote_code=True, resume_download=True,
+        'args.checkpoint_path', trust_remote_code=True, resume_download=True,
     )
 
     return model, tokenizer
