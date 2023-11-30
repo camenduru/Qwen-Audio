@@ -8,7 +8,7 @@
   },
   "attn_dropout_prob": 0.0,
   "bf16": false,
-  "fp16": false,
+  "fp16": true,
   "fp32": false,
   "emb_dropout_prob": 0.0,
   "intermediate_size": 22016,
