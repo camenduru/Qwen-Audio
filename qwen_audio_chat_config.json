@@ -1,0 +1,53 @@
+{
+    "_name_or_path": "10302244_iter8000_final/",
+    "architectures": [
+      "QWenLMHeadModel"
+    ],
+    "attn_dropout_prob": 0.0,
+    "audio": {
+      "add_audio_bos_eos_token": true,
+      "audio_start_id": 155164,
+      "avg_pool": true,
+      "n_ctx": 1500,
+      "n_head": 20,
+      "n_layer": 32,
+      "n_mels": 80,
+      "n_state": 1280,
+      "output_dim": 4096
+    },
+    "auto_map": {
+      "AutoConfig": "configuration_qwen.QWenConfig",
+      "AutoModelForCausalLM": "modeling_qwen.QWenLMHeadModel"
+    },
+    "bf16": false,
+    "emb_dropout_prob": 0.0,
+    "fp16": true,
+    "fp32": false,
+    "hidden_size": 4096,
+    "initializer_range": 0.02,
+    "intermediate_size": 22016,
+    "kv_channels": 128,
+    "layer_norm_epsilon": 1e-05,
+    "max_position_embeddings": 8192,
+    "model_type": "qwen",
+    "no_bias": true,
+    "num_attention_heads": 32,
+    "num_hidden_layers": 32,
+    "onnx_safe": null,
+    "rotary_emb_base": 10000,
+    "rotary_pct": 1.0,
+    "scale_attn_weights": true,
+    "seq_length": 2048,
+    "softmax_in_fp32": false,
+    "tie_word_embeddings": false,
+    "tokenizer_type": "QWenTokenizer",
+    "torch_dtype": "bfloat16",
+    "transformers_version": "4.32.0",
+    "use_cache": true,
+    "use_cache_kernel": false,
+    "use_cache_quantization": false,
+    "use_dynamic_ntk": true,
+    "use_flash_attn": true,
+    "use_logn_attn": true,
+    "vocab_size": 155947
+  }

@@ -51,11 +51,10 @@ def _load_model_tokenizer(args):
         trust_remote_code=True,
         low_cpu_mem_usage=True,
         resume_download=True,
-        fp16=True,
         device_map='auto'
     ).eval()
     model.generation_config = GenerationConfig.from_pretrained(
-        args.checkpoint_path, trust_remote_code=True, resume_download=True,
+        'qwen_audio_chat_config.json', trust_remote_code=True, resume_download=True,
     )
 
     return model, tokenizer
