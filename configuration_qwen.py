@@ -24,7 +24,7 @@ class QWenConfig(PretrainedConfig):
         scale_attn_weights=True,
         use_cache=True,
         bf16=False,
-        fp16=True,
+        fp16=False,
         fp32=False,
         kv_channels=128,
         rotary_pct=1.0,

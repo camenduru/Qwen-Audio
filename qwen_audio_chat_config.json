@@ -21,7 +21,7 @@
     },
     "bf16": false,
     "emb_dropout_prob": 0.0,
-    "fp16": true,
+    "fp16": false,
     "fp32": false,
     "hidden_size": 4096,
     "initializer_range": 0.02,
