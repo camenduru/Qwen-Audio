@@ -223,7 +223,7 @@ Qwen-Audio-Chat <a href="https://modelscope.cn/models/qwen/Qwen-Audio-Chat/summa
         chatbot = gr.Chatbot(label='Qwen-Audio-Chat', elem_classes="control-height", height=750)
         query = gr.Textbox(lines=2, label='Input')
         task_history = gr.State([])
-        mic = gr.Audio(source="microphone", type="filepath")
+        mic = gr.Audio(type="filepath")
 
         with gr.Row():
             empty_bin = gr.Button("🧹 Clear History (清除历史)")
