@@ -17,6 +17,7 @@ import tempfile
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 from transformers.generation import GenerationConfig
 from pydub import AudioSegment
+import torch
 
 DEFAULT_CKPT_PATH = 'Qwen/Qwen-Audio-Chat'
 
